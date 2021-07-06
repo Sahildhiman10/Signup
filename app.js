@@ -29,7 +29,7 @@ app.post("/",function(req,res){
   const url= "https://us6.api.mailchimp.com/3.0/lists/524b93cd4d";
   const options={
     method: "POST",
-    auth: "sahil:b338a23f2ac8643f4d36e9e0bfff136e-us6"
+    auth: "sahil:";
   }
   const request=https.request(url,options,function(response){
     if(response.statusCode===200){
@@ -51,5 +51,3 @@ app.post("/failure",function(request,response){
 app.listen(3000,function(){
   console.log("server on");
 });
-// b338a23f2ac8643f4d36e9e0bfff136e-us6
-// 524b93cd4d
